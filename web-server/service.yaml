@@ -1,17 +1,17 @@
 apiVersion: v1
 kind: Service
 metadata:
-  creationTimestamp: "2022-07-08T02:09:42Z"
+  creationTimestamp: "2022-07-08T04:24:59Z"
   labels:
-    app: nginx
-  name: nginx
+    app: nginx-dep
+  name: nginx-service
   namespace: default
-  resourceVersion: "222004"
-  uid: 0d69f769-b45a-4bb2-b68c-7b446e8fe4a0
+  resourceVersion: "243181"
+  uid: 82591c2a-7424-4e94-adde-d03be5176800
 spec:
-  clusterIP: 10.100.235.81
+  clusterIP: 10.109.153.244
   clusterIPs:
-  - 10.100.235.81
+  - 10.109.153.244
   internalTrafficPolicy: Cluster
   ipFamilies:
   - IPv4
@@ -19,8 +19,9 @@ spec:
   ports:
   - port: 80
     protocol: TCP
+    targetPort: 80
   selector:
-    app: nginx
+    app: nginx-dep
   sessionAffinity: None
   type: ClusterIP
 status:
