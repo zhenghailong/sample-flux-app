@@ -7,7 +7,6 @@ metadata:
   name: nginx-service
   namespace: default
   resourceVersion: "243181"
-  uid: 82591c2a-7424-4e94-adde-d03be5176800
 spec:
   clusterIP: 10.109.153.244
   clusterIPs:
